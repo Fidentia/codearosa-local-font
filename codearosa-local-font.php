@@ -13,5 +13,6 @@ License: none
 function codearosa_local_font() {
 
   wp_enqueue_style('codearosalocalfont-css', plugins_url( '/css/codearosalocalfont.css', __FILE__ ), array(), '1.1', 'all' );
+  wp_enqueue_style('typography-css', plugins_url( '/css/typography.css', __FILE__ ), array(), '1.1', 'all' );
 }
 add_action('wp_enqueue_scripts','codearosa_local_font');
